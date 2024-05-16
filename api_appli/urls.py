@@ -19,6 +19,9 @@ urlpatterns = [
     path('voyagers/',views.VoyageList.as_view()),
     path('voyagers/<int:pk>/', views.VoyageDetail.as_view()),
 
+    path('tarifs/',views.TarifList.as_view()),
+    path('tarifs/<int:pk>/', views.TarifDetail.as_view()),
+
     path('credit/', credit_account, name='credit_account'),
     path('debit/', debit_account, name='debit_account'),
 ]
